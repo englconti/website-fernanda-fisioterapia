@@ -1,6 +1,6 @@
 # Éfis Terapias | Dra. Fernanda Costa
 
-Site de uma página para a clínica de fisioterapia e terapias integrativas da Dra. Fernanda Costa, no Retiro, em Florianópolis (SC). Feito só com HTML e CSS, sem JavaScript.
+Site de uma página para a clínica de fisioterapia e terapias integrativas da Dra. Fernanda Costa, na Lagoa da Conceição, em Florianópolis (SC). Feito só com HTML e CSS, sem JavaScript.
 
 ## Como ver
 
@@ -25,7 +25,8 @@ reference_images/   fotos originais enviadas como referência (não são usadas 
 ## Dados da clínica (do Google Maps)
 
 - Nome no Google: Dra. Fernanda Costa - Éfis terapias (fisioterapeuta)
-- Endereço: Av. Prefeito Acácio Garibaldi, nº 174, Retiro, Florianópolis - SC, 88062-600
+- Bairro: Lagoa da Conceição (confirmado pela dona; o Google Maps mostra Retiro).
+- Endereço: Av. Prefeito Acácio Garibaldi, nº 174, Lagoa da Conceição, Florianópolis - SC, 88062-600
 - Coordenadas: -27.6105375, -48.4423141
 - Telefone: (48) 99194-8152
 - Nota: 5,0 com 75 avaliações
