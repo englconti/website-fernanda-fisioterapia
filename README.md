@@ -54,7 +54,8 @@ reference_images/   fotos originais enviadas como referência (não são usadas 
 - Se o logotipo pode ser substituído pelo arquivo original (o do site é um desenho simplificado da flor de lótus).
 - Endereço do site e imagem de compartilhamento (`og:image`), quando houver domínio.
 - Texto do painel "Constelação sistêmica" (é provisório) e confirmar o nome do serviço.
-- Foto da fonoaudiologia (painel segue sem foto).
+- Foto da fonoaudiologia (hoje usa uma foto provisória de massoterapia).
+- Biografia da Dra. Fernanda (o texto em "Quem é a Dra. Fernanda Costa" é genérico) e CREFITO.
 - Sobram em `reference_images/` as fotos 010 (fachada alternativa), 014 (sala de pilates) e 015 (cartas sobre a mesa).
 
 ## Design (versão modernizada)
