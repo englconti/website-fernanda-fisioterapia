@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://englconti.github.io/website-fernanda-fisioterapia/sitemap.xml

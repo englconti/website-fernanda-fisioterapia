@@ -64,3 +64,10 @@ reference_images/   fotos originais enviadas como referência (não são usadas 
 - **Estrutura:** cabeçalho em pílula flutuante, seções como blocos arredondados, coluna de avaliações fixa ao rolar no desktop, chamada final para agendar.
 - **Motivo "pétala":** cantos opostos arredondados nas fotos, vindos do logotipo. Único movimento: a pétala da foto principal se abre ao carregar (respeita `prefers-reduced-motion`).
 - **Sem JavaScript:** menu mobile e acordeão de serviços são só CSS.
+
+## Publicação (GitHub Pages)
+
+- Repositório: https://github.com/englconti/website-fernanda-fisioterapia
+- Endereço previsto: https://englconti.github.io/website-fernanda-fisioterapia/
+- Para ativar: Settings > Pages > Deploy from a branch > `main` / `(root)`.
+- Ao trocar para domínio próprio, atualizar a URL em `index.html` (canonical, `og:url`, `og:image`, JSON-LD), `robots.txt` e `sitemap.xml`.
