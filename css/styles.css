@@ -442,6 +442,13 @@ a { color: inherit; }
   .panels:is(:hover, :focus-within) .panel:first-child:not(:hover):not(:focus-within) .panel__more { grid-template-rows: 0fr; }
 
   .panel__title { font-size: 1.4rem; }
+
+  /* Painéis fechados: título na vertical, para caber todos os 6 sem cortar */
+  .panel__title { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; margin: 0; }
+  .panel:first-child .panel__title,
+  .panel:hover .panel__title,
+  .panel:focus-within .panel__title { writing-mode: horizontal-tb; transform: none; white-space: normal; margin: 0 0 .4rem; }
+  .panels:is(:hover, :focus-within) .panel:first-child:not(:hover):not(:focus-within) .panel__title { writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap; margin: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -483,6 +490,14 @@ a { color: inherit; }
 }
 .closeup__item:first-child { border-radius: 0 35% 0 35%; }
 
+/* Segunda fileira: 4 fotos (soma das proporções 3,69) */
+.closeup__row--2 { margin-top: 1rem; }
+@media (min-width: 700px) {
+  .closeup__row--2 { height: calc((min(100vw - 2 * var(--gutter), var(--wrap-wide)) - 3rem) / 3.69); }
+}
+.closeup__row--2 .closeup__item:first-child { border-radius: 1rem; }
+.closeup__row--2 .closeup__item:nth-child(2) { border-radius: 35% 0 35% 0; }
+
 /* ---------- Sobre ---------- */
 
 .about__grid {
@@ -494,6 +509,9 @@ a { color: inherit; }
   .about__grid { grid-template-columns: 1.1fr .9fr; gap: 4.5rem; }
 }
 
+.about__photos { display: grid; gap: 1rem; }
+.about__space { margin: 0; }
+.about__space img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 1rem; display: block; }
 .about__photo { margin: 0; }
 .about__photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
 

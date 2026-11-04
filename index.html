@@ -39,6 +39,12 @@
       "latitude": -27.6105375,
       "longitude": -48.4423141
     },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    },
     "hasMap": "https://maps.app.goo.gl/6rS4mTuDbhAmSBdH6"
   }
   </script>
@@ -87,7 +93,7 @@
       <div class="wrap hero__grid">
         <div class="hero__copy">
           <h1 class="hero__title">Fisioterapia e terapias integrativas em Florianópolis</h1>
-          <p class="hero__lead">Atendimento com horário marcado, no Retiro, com a Dra. Fernanda Costa. Escolha o seu horário pelo WhatsApp.</p>
+          <p class="hero__lead">Atendimento com horário marcado, de segunda a sexta, das 8h às 20h, no Retiro, com a Dra. Fernanda Costa. Escolha o seu horário pelo WhatsApp.</p>
           <div class="actions">
             <a class="btn btn--primary" href="https://wa.me/5548991948152?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio.">Agendar pelo WhatsApp</a>
             <a class="btn btn--quiet" href="#como-chegar">Ver como chegar</a>
@@ -149,6 +155,18 @@
           </article>
 
           <article class="panel">
+            <img class="panel__img" src="assets/img/constelacao.webp" width="800" height="1067" loading="lazy" decoding="async"
+                 alt="Bonecos coloridos enfileirados ao lado de blocos de madeira sobre uma bancada escura">
+            <div class="panel__body">
+              <h3 class="panel__title">Constelação sistêmica</h3>
+              <div class="panel__more"><div class="panel__more-inner">
+                <p class="panel__text">Um olhar para as relações e para a história familiar, feito com bonecos e outros recursos simbólicos.</p>
+                <a class="panel__link" href="https://wa.me/5548991948152?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20constela%C3%A7%C3%A3o%20sist%C3%AAmica.">Saber mais sobre constelação</a>
+              </div></div>
+            </div>
+          </article>
+
+          <article class="panel">
             <img class="panel__img" src="assets/img/pilates.webp" width="800" height="1067" loading="lazy" decoding="async"
                  alt="Sala de pilates com colchonetes, bolas e um aparelho com molas e faixas elásticas">
             <div class="panel__body">
@@ -176,7 +194,7 @@
 
         <div class="closeup">
           <h3 class="closeup__title">O atendimento de perto</h3>
-          <p class="closeup__text">Massoterapia e ventosaterapia fazem parte do dia a dia da clínica. Estas imagens mostram um pouco do atendimento.</p>
+          <p class="closeup__text">Massoterapia, ventosaterapia, moxabustão e agulhamento fazem parte do dia a dia da clínica. Estas imagens mostram um pouco do atendimento.</p>
           <div class="closeup__row">
             <figure class="closeup__item" style="--r:1">
               <img src="assets/img/massoterapia-2.webp" width="800" height="800" loading="lazy" decoding="async"
@@ -191,6 +209,24 @@
                    alt="Kit de ventosaterapia com copos de vidro transparentes, bomba de vácuo e acessórios sobre uma bandeja branca">
             </figure>
           </div>
+          <div class="closeup__row closeup__row--2">
+            <figure class="closeup__item" style="--r:1">
+              <img src="assets/img/moxabustao.webp" width="800" height="800" loading="lazy" decoding="async"
+                   alt="Bastão de moxa verde aceso sobre a barriga de uma pessoa deitada em uma toalha branca">
+            </figure>
+            <figure class="closeup__item" style="--r:1.36">
+              <img src="assets/img/agulhamento.webp" width="800" height="550" loading="lazy" decoding="async"
+                   alt="Mãos de luvas brancas posicionando uma agulha fina durante um atendimento">
+            </figure>
+            <figure class="closeup__item" style="--r:.667">
+              <img src="assets/img/ventosa-perna.webp" width="800" height="1200" loading="lazy" decoding="async"
+                   alt="Quatro copos de ventosaterapia alinhados sobre a perna de um paciente">
+            </figure>
+            <figure class="closeup__item" style="--r:.667">
+              <img src="assets/img/massagem-maos.webp" width="800" height="1200" loading="lazy" decoding="async"
+                   alt="Mãos untadas com óleo massageando um pé">
+            </figure>
+          </div>
         </div>
       </div>
     </section>
@@ -198,10 +234,16 @@
     <!-- Sobre -->
     <section class="section about" id="sobre" aria-labelledby="sobre-titulo">
       <div class="wrap about__grid">
-        <figure class="about__photo">
-          <img class="petal-img petal-img--flip" src="assets/img/sobre-atendimento.webp" width="800" height="533" loading="lazy" decoding="async"
-               alt="Fisioterapeuta atendendo um paciente deitado na maca, em uma sala de paredes escuras">
-        </figure>
+        <div class="about__photos">
+  <figure class="about__photo">
+            <img class="petal-img petal-img--flip" src="assets/img/sobre-atendimento.webp" width="800" height="533" loading="lazy" decoding="async"
+                 alt="Fisioterapeuta atendendo um paciente deitado na maca, em uma sala de paredes escuras">
+          </figure>
+          <figure class="about__space">
+            <img src="assets/img/espaco.webp" width="800" height="1067" loading="lazy" decoding="async"
+                 alt="Sala de espera com mesa preta, cadeiras coloridas e parede de tijolinhos">
+          </figure>
+        </div>
 
         <div class="about__copy">
           <h2 class="section__title" id="sobre-titulo">Dra. Fernanda Costa e a Éfis Terapias</h2>
@@ -296,6 +338,7 @@
             Retiro, Florianópolis, SC<br>
             CEP 88062-600
           </address>
+          <p class="visit__hours"><strong>Horário de atendimento:</strong> segunda a sexta, das 8h às 20h.</p>
           <p>Procure a fachada lilás com a flor de lótus. O atendimento é com horário marcado: combine o seu pelo WhatsApp ou por telefone, no (48) 99194-8152.</p>
           <div class="actions">
             <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=-27.6105375,-48.4423141" target="_blank" rel="noopener">Traçar rota no Google Maps<span class="sr-only"> (abre em nova aba)</span></a>
@@ -337,7 +380,7 @@
           <svg class="lotus brand__mark" aria-hidden="true" focusable="false" style="--logo-gap:#1F1727"><use href="#lotus"/></svg>
           <span class="brand__name">Éfis Terapias</span>
         </a>
-        <p class="site-footer__text">Dra. Fernanda Costa, fisioterapeuta.<br>Av. Prefeito Acácio Garibaldi, nº 174, Retiro, Florianópolis, SC.</p>
+        <p class="site-footer__text">Dra. Fernanda Costa, fisioterapeuta.<br>Av. Prefeito Acácio Garibaldi, nº 174, Retiro, Florianópolis, SC.<br>Segunda a sexta, das 8h às 20h.</p>
       </div>
       <div>
         <p class="site-footer__text">

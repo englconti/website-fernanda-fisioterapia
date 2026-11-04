@@ -40,16 +40,21 @@ reference_images/   fotos originais enviadas como referência (não são usadas 
 - **Serviços:** painéis com as fotos do espaço. No desktop, o painel sob o mouse (ou com foco do teclado) se abre. No celular, todos aparecem empilhados.
 - **Movimento:** só um, a pétala da foto principal se abrindo ao carregar. Respeita `prefers-reduced-motion`.
 
+## Confirmado
+
+- Atendimento de segunda a sexta, das 8h às 20h.
+- O (48) 99194-8152 é também o WhatsApp da clínica.
+- Fotos de pacientes e depoimentos liberados para uso.
+
 ## Pendências para confirmar
 
-- Horários de atendimento (o Google só mostrou "abre às 8h de quarta").
-- Se o número (48) 99194-8152 também é o WhatsApp.
 - Se a fonoaudiologia é atendida na clínica e qual texto usar. Esse painel está sem foto.
 - Biografia, formação e número do CREFITO da Dra. Fernanda.
 - Se o logotipo pode ser substituído pelo arquivo original (o do site é um desenho simplificado da flor de lótus).
-- Permissão para usar as fotos de pacientes e o depoimento de Veronica Yanina.
 - Endereço do site e imagem de compartilhamento (`og:image`), quando houver domínio.
-- Várias fotos de `reference_images/` ainda não entraram no site (moxabustão, kit de ventosas, massagem abdominal, massagem nos pés e outras).
+- Texto do painel "Constelação sistêmica" (é provisório) e confirmar o nome do serviço.
+- Foto da fonoaudiologia (painel segue sem foto).
+- Sobram em `reference_images/` as fotos 010 (fachada alternativa), 014 (sala de pilates) e 015 (cartas sobre a mesa).
 
 ## Design (versão modernizada)
 
