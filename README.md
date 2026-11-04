@@ -50,3 +50,11 @@ reference_images/   fotos originais enviadas como referência (não são usadas 
 - Permissão para usar as fotos de pacientes e o depoimento de Veronica Yanina.
 - Endereço do site e imagem de compartilhamento (`og:image`), quando houver domínio.
 - Várias fotos de `reference_images/` ainda não entraram no site (moxabustão, kit de ventosas, massagem abdominal, massagem nos pés e outras).
+
+## Design (versão modernizada)
+
+- **Tipografia:** Fraunces (títulos, serifa suave) e Figtree (texto), hospedadas em `assets/fonts/` (licenças OFL incluídas). Nenhuma requisição a Google Fonts.
+- **Cores:** berinjela `#1F1727`, papel `#FBF7FC`, lilás-névoa `#EFE3F6`, lilás da faixada `#C48ED8`, verde-água do logotipo `#2E9C8F` / `#17766B`.
+- **Estrutura:** cabeçalho em pílula flutuante, seções como blocos arredondados, coluna de avaliações fixa ao rolar no desktop, chamada final para agendar.
+- **Motivo "pétala":** cantos opostos arredondados nas fotos, vindos do logotipo. Único movimento: a pétala da foto principal se abre ao carregar (respeita `prefers-reduced-motion`).
+- **Sem JavaScript:** menu mobile e acordeão de serviços são só CSS.

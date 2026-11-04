@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Éfis Terapias | Fisioterapia e terapias integrativas em Florianópolis</title>
   <meta name="description" content="Fisioterapia, pilates, massoterapia e terapias integrativas com a Dra. Fernanda Costa, no Retiro, em Florianópolis. Atendimento com horário marcado.">
-  <meta name="theme-color" content="#241B2D">
+  <meta name="theme-color" content="#1F1727">
+  <meta name="color-scheme" content="light">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
@@ -14,9 +15,9 @@
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+  <!-- Fontes hospedadas no próprio site (assets/fonts), sem chamadas ao Google -->
+  <link rel="preload" href="assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/styles.css">
 
   <script type="application/ld+json">
@@ -60,7 +61,7 @@
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
   <header class="site-header">
-    <div class="wrap site-header__bar">
+    <div class="site-header__bar">
       <a class="brand" href="#topo" aria-label="Éfis Terapias, voltar ao início">
         <svg class="lotus brand__mark" aria-hidden="true" focusable="false"><use href="#lotus"/></svg>
         <span class="brand__name">Éfis Terapias</span>
@@ -98,14 +99,14 @@
         </div>
 
         <figure class="hero__photo">
-          <img class="petal-img" src="assets/img/hero-atendimento.webp" width="800" height="1200"
+          <img class="petal-img" src="assets/img/hero-atendimento.webp" width="800" height="1200" fetchpriority="high" decoding="async"
                alt="Fisioterapeuta inclinada sobre um paciente deitado, com as mãos sob a cabeça e o pescoço dele">
         </figure>
       </div>
     </section>
 
     <!-- Serviços -->
-    <section class="section section--dark services" id="servicos" aria-labelledby="servicos-titulo">
+    <section class="section block block--dark services" id="servicos" aria-labelledby="servicos-titulo">
       <div class="wrap wrap--wide">
         <h2 class="section__title" id="servicos-titulo">O que você encontra na Éfis</h2>
         <p class="section__intro">Escolha por onde começar. Em qualquer uma das frentes, o atendimento é com horário marcado.</p>
@@ -113,7 +114,7 @@
         <div class="panels">
 
           <article class="panel">
-            <img class="panel__img" src="assets/img/fisioterapia.webp" width="800" height="1201" loading="lazy"
+            <img class="panel__img" src="assets/img/fisioterapia.webp" width="800" height="1201" loading="lazy" decoding="async"
                  alt="Fisioterapeuta fazendo massagem nas costas de um paciente deitado na maca">
             <div class="panel__body">
               <h3 class="panel__title">Fisioterapia</h3>
@@ -136,7 +137,7 @@
           </article>
 
           <article class="panel">
-            <img class="panel__img" src="assets/img/terapias-integrativas.webp" width="800" height="1200" loading="lazy"
+            <img class="panel__img" src="assets/img/terapias-integrativas.webp" width="800" height="1200" loading="lazy" decoding="async"
                  alt="Copos de ventosaterapia alinhados sobre o corpo de um paciente">
             <div class="panel__body">
               <h3 class="panel__title">Terapias integrativas</h3>
@@ -148,7 +149,7 @@
           </article>
 
           <article class="panel">
-            <img class="panel__img" src="assets/img/pilates.webp" width="800" height="1067" loading="lazy"
+            <img class="panel__img" src="assets/img/pilates.webp" width="800" height="1067" loading="lazy" decoding="async"
                  alt="Sala de pilates com colchonetes, bolas e um aparelho com molas e faixas elásticas">
             <div class="panel__body">
               <h3 class="panel__title">Pilates</h3>
@@ -160,7 +161,7 @@
           </article>
 
           <article class="panel">
-            <img class="panel__img" src="assets/img/massoterapia.webp" width="800" height="800" loading="lazy"
+            <img class="panel__img" src="assets/img/massoterapia.webp" width="800" height="800" loading="lazy" decoding="async"
                  alt="Mãos segurando duas pedras escuras sobre o corpo de uma pessoa, em uma massagem com pedras quentes">
             <div class="panel__body">
               <h3 class="panel__title">Massoterapia</h3>
@@ -172,6 +173,25 @@
           </article>
 
         </div>
+
+        <div class="closeup">
+          <h3 class="closeup__title">O atendimento de perto</h3>
+          <p class="closeup__text">Massoterapia e ventosaterapia fazem parte do dia a dia da clínica. Estas imagens mostram um pouco do atendimento.</p>
+          <div class="closeup__row">
+            <figure class="closeup__item" style="--r:1">
+              <img src="assets/img/massoterapia-2.webp" width="800" height="800" loading="lazy" decoding="async"
+                   alt="Mãos de uma terapeuta de jaleco branco massageando a barriga de uma pessoa deitada, com creme na pele">
+            </figure>
+            <figure class="closeup__item" style="--r:1.11">
+              <img src="assets/img/massoterapia-3.webp" width="800" height="720" loading="lazy" decoding="async"
+                   alt="Mãos massageando a barriga de uma pessoa deitada sobre uma toalha branca">
+            </figure>
+            <figure class="closeup__item" style="--r:1.66">
+              <img src="assets/img/ventosa-terapia.webp" width="800" height="483" loading="lazy" decoding="async"
+                   alt="Kit de ventosaterapia com copos de vidro transparentes, bomba de vácuo e acessórios sobre uma bandeja branca">
+            </figure>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -179,13 +199,13 @@
     <section class="section about" id="sobre" aria-labelledby="sobre-titulo">
       <div class="wrap about__grid">
         <figure class="about__photo">
-          <img class="petal-img petal-img--flip" src="assets/img/sobre-atendimento.webp" width="800" height="533" loading="lazy"
+          <img class="petal-img petal-img--flip" src="assets/img/sobre-atendimento.webp" width="800" height="533" loading="lazy" decoding="async"
                alt="Fisioterapeuta atendendo um paciente deitado na maca, em uma sala de paredes escuras">
         </figure>
 
         <div class="about__copy">
           <h2 class="section__title" id="sobre-titulo">Dra. Fernanda Costa e a Éfis Terapias</h2>
-          <p>A Éfis Terapias é o espaço da fisioterapeuta Dra. Fernanda Costa, no Retiro, em Florianópolis. Fisioterapia, pilates, massoterapia e terapias integrativas se encontram no mesmo lugar, com atendimento sempre com horário marcado.</p>
+          <p class="about__lead">A Éfis Terapias é o espaço da fisioterapeuta Dra. Fernanda Costa, no Retiro, em Florianópolis. Fisioterapia, pilates, massoterapia e terapias integrativas se encontram no mesmo lugar.</p>
           <p>Nas avaliações dos pacientes, o que mais aparece é a atenção, o acolhimento e o ambiente aconchegante.</p>
           <ul class="facts">
             <li>Atendimento com horário marcado</li>
@@ -198,22 +218,16 @@
     </section>
 
     <!-- Avaliações -->
-    <section class="section section--petal reviews" id="avaliacoes" aria-labelledby="avaliacoes-titulo">
-      <div class="wrap reviews__grid">
-        <div class="reviews__score">
+    <section class="section block block--mist reviews" id="avaliacoes" aria-labelledby="avaliacoes-titulo">
+      <div class="wrap reviews__layout">
+
+        <div class="reviews__aside">
           <h2 class="section__title" id="avaliacoes-titulo">O que dizem as avaliações</h2>
           <p class="score">
             <span class="score__value">5,0</span>
             <span class="score__stars" aria-hidden="true">★★★★★</span>
           </p>
           <p class="score__meta">Nota média no Google, com 75 avaliações.</p>
-        </div>
-
-        <div class="reviews__voices">
-          <figure class="quote">
-            <blockquote class="quote__body">“O trabalho da Fernanda é realmente diferenciado.”</blockquote>
-            <figcaption class="quote__by">Veronica Yanina, em avaliação no Google</figcaption>
-          </figure>
 
           <h3 class="topics__title">Assuntos mais citados pelos pacientes</h3>
           <ul class="topics">
@@ -225,6 +239,50 @@
 
           <a class="textlink" href="https://maps.app.goo.gl/6rS4mTuDbhAmSBdH6" target="_blank" rel="noopener">Ler as avaliações no Google<span class="sr-only"> (abre em nova aba)</span></a>
         </div>
+
+        <div class="reviews__list">
+          <figure class="quote">
+            <blockquote class="quote__body">“O trabalho da Fernanda é realmente diferenciado.”</blockquote>
+            <figcaption class="quote__by">Veronica Yanina, em avaliação no Google</figcaption>
+          </figure>
+
+          <h3 class="testimonials__title">Relatos de quem já foi atendido</h3>
+
+          <figure class="testimonial">
+            <blockquote class="testimonial__text">
+              <p>Conhecer o trabalho da Dra. Fernanda Costa foi uma experiência transformadora. Minha busca por autoconhecimento me conectou com ela e aprendo demais com seu conhecimento. Super indico pra quem está com a mente aberta e pronta para evoluir nessa vida.</p>
+            </blockquote>
+            <figcaption class="testimonial__name">Jane Beatriz Pereira</figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote class="testimonial__text" lang="en">
+              <p>Excellent physio in Floripa! Highly Reccommended. 5 stars ☆☆☆☆☆</p>
+              <p>Fernanda helped a lot with getting rid of scar tissue from my injured shoulder.</p>
+              <p>We did a detailed pre assessment and then she worked on the injury with manual technique.</p>
+              <p>She has lots of knowledge, has a great energy and did a great job.</p>
+              <p>James</p>
+            </blockquote>
+            <figcaption class="testimonial__name">James T</figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote class="testimonial__text">
+              <p>Já fui atendida várias vezes pela Fernanda. Ela é ótima profissional! A massagem dela é maravilhosa, assim como as manobras e as técnicas que ela utiliza com a ventosaterapia! Super recomendo para aliviar as dores e tensões do dia a dia!</p>
+            </blockquote>
+            <figcaption class="testimonial__name">Camila Lumertz</figcaption>
+          </figure>
+
+          <figure class="testimonial">
+            <blockquote class="testimonial__text">
+              <p>Surpreendente!</p>
+              <p>Logo após anamnese, o uso da ferramenta adequada, conforme conhecimentos da Fernanda, foi um alento para as dores na coluna. Trata-se de uma profissional dedicada, respeitosa, estudiosa, supera as espectativas. Sigo com o tratamento e há uma ótima transformação em minha vida.</p>
+              <p>Muito obrigada Fernanda.</p>
+            </blockquote>
+            <figcaption class="testimonial__name">Maria Celida</figcaption>
+          </figure>
+        </div>
+
       </div>
     </section>
 
@@ -244,7 +302,7 @@
             <a class="btn btn--quiet" href="tel:+5548991948152">Ligar agora</a>
           </div>
           <figure class="visit__photo">
-            <img class="petal-img petal-img--flip" src="assets/img/fachada.webp" width="800" height="1067" loading="lazy"
+            <img class="petal-img petal-img--flip" src="assets/img/fachada.webp" width="800" height="1067" loading="lazy" decoding="async"
                  alt="Fachada da Éfis Terapias, com faixa lilás e o logotipo da flor de lótus">
           </figure>
         </div>
@@ -257,13 +315,26 @@
       </div>
     </section>
 
+    <!-- Chamada final -->
+    <section class="section block block--lilac cta" aria-labelledby="cta-titulo">
+      <div class="wrap cta__grid">
+        <h2 class="cta__title" id="cta-titulo">Agende o seu horário</h2>
+        <p class="cta__text">O atendimento é com horário marcado. Conte o que você sente e escolha um horário pelo WhatsApp.</p>
+        <div class="actions">
+          <a class="btn btn--ink" href="https://wa.me/5548991948152?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio.">Agendar pelo WhatsApp</a>
+          <a class="btn btn--quiet" href="tel:+5548991948152">Ligar agora</a>
+        </div>
+      </div>
+      <svg class="lotus cta__mark" aria-hidden="true" focusable="false"><use href="#lotus"/></svg>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="wrap site-footer__grid">
       <div>
         <a class="brand brand--light" href="#topo" aria-label="Éfis Terapias, voltar ao início">
-          <svg class="lotus brand__mark" aria-hidden="true" focusable="false" style="--logo-gap:#241B2D"><use href="#lotus"/></svg>
+          <svg class="lotus brand__mark" aria-hidden="true" focusable="false" style="--logo-gap:#1F1727"><use href="#lotus"/></svg>
           <span class="brand__name">Éfis Terapias</span>
         </a>
         <p class="site-footer__text">Dra. Fernanda Costa, fisioterapeuta.<br>Av. Prefeito Acácio Garibaldi, nº 174, Retiro, Florianópolis, SC.</p>
